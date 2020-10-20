@@ -3,6 +3,7 @@ package mastering;
 import java.io.*;
 
 public class MainApp {
+	
     public static void main(String[] args) {
         try {
             stringCalculator();
@@ -18,6 +19,7 @@ public class MainApp {
         System.out.println(substringCount2(s));
         bufferedReader.close();
     }
+	
     private static long substringCount(String s) {
         int myendIndex=s.length();
         int count=0;
@@ -29,6 +31,7 @@ public class MainApp {
         }
         return count;
     }
+	
     private static long substringCount2(String s) {
         int myendIndex=s.length();
         int count=0;
