@@ -19,5 +19,17 @@ public class MainApp {
             }
         }).start();
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    ArraysMethods arraysMethods = new ArraysMethods();
+                    arraysMethods.Tasks();
+                } catch (Exception ex) {
+                    System.out.print("Error: "+ex.toString());
+                }
+            }
+        }).start();
+
     }
 }
