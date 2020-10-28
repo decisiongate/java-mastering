@@ -8,6 +8,7 @@ public class StringCalculator {
     public StringCalculator() {
     }
     private static void stringCalculator() throws IOException {
+		System.out.println("Input: ");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String s = bufferedReader.readLine();
         System.out.println(substringCount(s));
