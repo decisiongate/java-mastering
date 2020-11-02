@@ -20,10 +20,8 @@ public class Operators {
         System.out.println( "Value of b is : " + b );
 
         String name = "Test";
-        // following will return true since name is type of String
         boolean result = name instanceof String;
         System.out.println( result );
 
     }
-
 }
