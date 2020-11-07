@@ -14,4 +14,4 @@
 * Implementations of design patterns in Java
 * Design patterns: creational, structural, and behavioral
 * build plugins: maven-compiler-plugin, maven-assembly-plugin
-* Strings, Arrays, Operators, Lambdas, Threads
+* strings, arrays, operators, lambdas, threads, ...
