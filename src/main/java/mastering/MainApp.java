@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MainApp {
 
     private static String[] classIndex = new String[]{
-            "String Calculator", "Arrays Methods", "Operators", "Lambdas" };
+            "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads" };
 
     public static void main(String[] args) {
 
@@ -43,6 +43,11 @@ public class MainApp {
                 lambdas.Tasks();
             } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
 
+        if(classIndex[menuOption].equals("Threads")) { new Thread(new Runnable() {
+            @Override public void run() { try {
+                Threads threads = new Threads();
+                threads.task();
+            } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
 
     }
 }
