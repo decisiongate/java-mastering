@@ -22,9 +22,9 @@ public class HashMapImpl {
 
         for (Double i : paramSet.values()) System.out.println(i);
 
+        for (String i : paramSet.keySet()) System.out.println("key: " + i + " value: " + paramSet.get(i));
 
         paramSet.clear();
 
     }
-
 }
