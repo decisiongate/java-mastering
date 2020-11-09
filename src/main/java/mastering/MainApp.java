@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MainApp {
 
     private static String[] classIndex = new String[]{
-            "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads", "ThreadsImpl" };
+            "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads", "ThreadsImpl", "HashMapImpl" };
 
     public static void main(String[] args) {
 
@@ -53,6 +53,12 @@ public class MainApp {
             @Override public void run() { try {
                 ThreadsImpl threadsimpl = new ThreadsImpl();
                 threadsimpl.task();
+            } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
+
+        if(classIndex[menuOption].equals("HashMapImpl")) { new Thread(new Runnable() {
+            @Override public void run() { try {
+                HashMapImpl hashmapimpl = new HashMapImpl();
+                hashmapimpl.task();
             } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
 
     }
