@@ -17,5 +17,23 @@ public class IteratorImpl {
         System.out.println(it.next());
         System.out.println(it.next());
 
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        ArrayList<Integer> paramValues = new ArrayList<Integer>();
+        paramValues.add(634);
+        paramValues.add(832);
+        paramValues.add(982);
+        paramValues.add(524);
+        Iterator<Integer> it2 = paramValues.iterator();
+        while(it2.hasNext()) {
+            Integer i = it2.next();
+            if(i < 600) {
+                it2.remove();
+            }
+        }
+        System.out.println(paramValues);
+
     }
 }
