@@ -8,7 +8,7 @@ public class MainApp {
 
     private static String[] classIndex = new String[]{
             "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads", "ThreadsImpl", "HashMapImpl", "HashSetImpl",
-            "IteratorImpl"};
+            "IteratorImpl", "LoopsImpl"};
 
     public static void main(String[] args) {
 
@@ -72,6 +72,12 @@ public class MainApp {
             @Override public void run() { try {
                 IteratorImpl iteratorimpl = new IteratorImpl();
                 iteratorimpl.task();
+            } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
+
+        if(classIndex[menuOption].equals("LoopsImpl")) { new Thread(new Runnable() {
+            @Override public void run() { try {
+                LoopsImpl loopsimpl = new LoopsImpl();
+                loopsimpl.task();
             } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
 
     }
