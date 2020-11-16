@@ -8,7 +8,7 @@ public class MainApp {
 
     private static String[] classIndex = new String[]{
             "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads", "ThreadsImpl", "HashMapImpl", "HashSetImpl",
-            "IteratorImpl", "LoopsImpl"};
+            "IteratorImpl", "LoopsImpl", "PatternMatcherImpl"};
 
     public static void main(String[] args) {
 
@@ -78,6 +78,12 @@ public class MainApp {
             @Override public void run() { try {
                 LoopsImpl loopsimpl = new LoopsImpl();
                 loopsimpl.task();
+            } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
+
+        if(classIndex[menuOption].equals("PatternMatcherImpl")) { new Thread(new Runnable() {
+            @Override public void run() { try {
+                PatternMatcherImpl patternmatcherimpl = new PatternMatcherImpl();
+                patternmatcherimpl.task();
             } catch (Exception ex) { System.out.print("Error: " + ex.toString()); }}}).start();}
 
     }
