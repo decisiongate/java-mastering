@@ -7,8 +7,9 @@ import java.util.Scanner;
 public class MainApp {
 
     private static String[] classIndex = new String[]{
-            "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads", "ThreadsImpl", "HashMapImpl", "HashSetImpl",
-            "IteratorImpl", "LoopsImpl", "PatternMatcherImpl"};
+            "String Calculator", "Arrays Methods", "Operators", "Lambdas", "Threads",
+            "ThreadsImpl", "HashMapImpl", "HashSetImpl", "IteratorImpl", "LoopsImpl",
+            "PatternMatcherImpl"};
 
     public static void main(String[] args) {
 

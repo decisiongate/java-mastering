@@ -40,7 +40,7 @@ public class ArraysMethods {
         String elements = StringUtils.join(new String[] { "a", "b", "c" }, ", ");
         System.out.println(elements);
 
-        /// Covnert an ArrayList to an array:
+        /// Convert an ArrayList to an array:
         String[] stringArray3 = { "a", "b", "c", "d", "e", "f", "g" };
         ArrayList<String> arrayList2 = new ArrayList<String>(Arrays.asList(stringArray3));
         String[] stringArr = new String[arrayList2.size()];
