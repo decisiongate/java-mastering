@@ -1,4 +1,4 @@
-# Applications for mastering Java: design patterns
+# Classes for mastering Java: design patterns
 	
 ## Dependencies
 * Java: 14
@@ -14,4 +14,4 @@
 * Implementations of design patterns in Java
 * Design patterns: creational, structural, and behavioral
 * build plugins: maven-compiler-plugin, maven-assembly-plugin
-* strings, arrays, operators, lambdas, threads, HashMap, ...
+* strings, arrays, operators, lambdas, threads, HashMaps, HashSets, iterators, loops, patterns, matchers, ...
