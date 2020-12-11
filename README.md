@@ -1,12 +1,10 @@
 # Classes for mastering Java: design patterns
 	
-## Dependencies
+## Technology stack & dependencies
 * Java: 14
 * Apache Maven: 3.3.0
 * Apache Commons Lang: 3.11
 * JUnit: 5.7
-
-## Technology stack
 * OpenJDK
 * IntelliJ IDEA Ultimate
 
